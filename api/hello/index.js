@@ -1,4 +1,11 @@
+'use strict'
+
+const greet = require('../_utils/greeter')
+
 module.exports = async (req, res) => {
   const name = req.query.name || 'world'
-  res.end(`Hello, ${name}!`)
+  return greet('Hello', name)
+    .then(r => {
+      res.end(r)
+    })
 }

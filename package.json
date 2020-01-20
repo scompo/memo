@@ -1,0 +1,23 @@
+{
+  "name": "memo",
+  "version": "0.0.1",
+  "description": "memo",
+  "scripts": {
+    "test": "standard && tap --100",
+    "lint": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scompo/memo.git"
+  },
+  "author": "Mauro Scomparin <scompo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scompo/memo/issues"
+  },
+  "homepage": "https://github.com/scompo/memo#readme",
+  "devDependencies": {
+    "standard": "^14.3.1",
+    "tap": "^14.10.6"
+  }
+}
