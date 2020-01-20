@@ -30,7 +30,7 @@
     fetch('/api/version')
       .then(r => r.text())
       .then(v => {
-        document.getElementById('version-txt').innerHTML(v)
+        document.getElementById('version-txt').innerText = v
       })
   </script>
 </body>
