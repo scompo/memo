@@ -17,6 +17,7 @@
     <section>
       <header>
         <h2>API list</h2>
+        <h3>Version: <span id="version-txt">--</span></h3>
         <p>List of the implemented APIs</p>
       </header>
       <ul>
@@ -25,6 +26,13 @@
       </ul>
     </section>
   </main>
+  <script>
+    fetch('/api/version')
+      .then(r => r.json())
+      .then(v => {
+        document.getElementById('version-txt').innerHTML(v)
+      })
+  </script>
 </body>
 
 </html>
