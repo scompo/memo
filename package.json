@@ -1,6 +1,6 @@
 {
   "name": "memo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "memo",
   "scripts": {
     "test": "standard && tap --100",
