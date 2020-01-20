@@ -28,7 +28,7 @@
   </main>
   <script>
     fetch('/api/version')
-      .then(r => r.json())
+      .then(r => r.text())
       .then(v => {
         document.getElementById('version-txt').innerHTML(v)
       })
